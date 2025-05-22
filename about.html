@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/game-controller.png">
+    <title>GameX</title>
+    <link rel="stylesheet" href="/css/main.css":>
+</head>
+
+<body>
+ <div class="wrapper">
+    <header class="container">
+        <span class="logo">GameX</span>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li class="active"><a href="/about.html">О нас</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li class="btn"><a href="/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <div class="hero-about container">
+        <div class="info">
+            <h1>Воплощаем идеи в реальность для мобильных, компьютерных игр и цифрового дизайна</h1>
+            <p>Создавайте уникальные игровые миры и впечатляющие 3D-проекты с нашей командой профессионалов</p>
+            <button class="btn"><a href="#footer-section">Оставайтесь на свзяи</a></button>
+        </div>
+        <img src="/icons/info-image.png" alt="info-image">
+     </div>
+    <div class="container work">
+        <h2>Почему стоит работать с нами</h2>
+        <div class="blocks">
+            <div class="block">
+                <span class="badge purple">1-я причина</span>
+                <h3>Наша миссия</h3>
+                <p>Мы создаем захватывающие игровые вселенные, где каждый игрок может найти приключение по душе. Наша цель — дарить эмоции, вдохновлять и объединять людей через игры</p>
+            </div>
+            <div class="block">
+                <span class="badge brown">2-я причина</span>
+                <h3>История студии</h3>
+                <p>Основанная в 2011 году, наша студия начинала с небольших мобильных проектов, а сегодня разрабатывает AAA-тайтлы для миллионов игроков по всему миру</p>
+            </div>
+            <div class="block">
+                <span class="badge green">3-я причина</span>
+                <h3>Команда</h3>
+                <p>В нашей команде есть талантливые разработчики, художники и гейм-дизайнеры, которые горят своим делом. Мы верим, что только страсть к играм рождает великие проекты</p>
+            </div>
+        </div>
+    </div>
+    <div class="container email">
+        <h3>Инновационные решения для вашего бизнеса</h3>
+        <p>Наша компания специализируется на создании современных digital-решений, которые помогают бизнесу расти и развиваться в цифровую эпоху</p>
+        <div class="block">
+            <div>
+                <h4>Оставайтесь в курсе событий</h4>
+                <p>Подпишитесь, чтобы получать последние новости о нас.
+                   Мы обещаем не рассылать вам спам!</p>
+            </div>
+            <div>
+                <input type="email" id="emailField" placeholder="Введите email">
+                <button onclick="checkEmail()">Продолжить</button>
+            </div>
+        </div>
+    </div>
+ </div>
+ <footer id="footer-section">
+    <div class="blocks container">
+        <div>
+            <span class="logo">GameX</span>
+            <p>Воплощаем идеи в реальность для мобильных, компьютерных игр и цифрового дизайна</p>
+        </div>
+        <div>
+            <h4>О нас</h4>
+            <ul>
+                <li>Новости</li>
+                <li>Портфолио</li>
+                <li>Карьер</li>
+                <li>Связь с нами</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Связь с нами</h4>
+            <p>Наш центр связи всегда готов оказать вам необходимую помощь</p>
+            <p>+7 (985) 814-98-32</p>
+        </div>
+    </div>
+    <hr>
+    <p>Copyright ® 2025 GameX все права защищены</p> 
+ </footer>
+  <script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value;
+        if(!email.includes('@')) alert('Нет символа @');
+        else if(!email.includes('.')) alert('Нет символа .');
+        else alert('Почта верна!');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/game-controller.png">
+    <title>GameX</title>
+    <link rel="stylesheet" href="/css/main.css":>
+</head>
+
+<body>
+    <header class="container">
+        <span class="logo">GameX</span>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about.html">О нас</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li class="btn"><a href="/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container hero-contacts">
+        <h1>Свяжитесь с нами — мы всегда на связи!</h1>
+        <p>Наша команда готова ответить на ваши вопросы, обсудить сотрудничество или помочь с выбором услуг. Оставьте сообщение — и мы ответим в течение 24 часов</p>
+        <img src="/icons/map.png" alt="map">
+    </div>
+
+    <div class="feedback">
+        <div class="container">
+            <h2>Оставьте свой отзыв</h2>
+            <p>Оставив свой отзыв здесь вы помогаете нам стать лучше!</p>
+
+            <form>
+                <div class="inline">
+                    <div>
+                        <label>Имя</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Фамилия</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <label>Адресс электронной почты</label>
+                <input type="email" class="one-line">
+
+                <label>Ваш отзыв</label>
+                <textarea class="one-line"></textarea>
+                <button type="button">Продолжить</button>
+            </form>
+        </div>
+    </div>
+
+ <footer id="footer-section">
+    <div class="blocks container">
+        <div>
+            <span class="logo">GameX</span>
+            <p>Воплощаем идеи в реальность для мобильных, компьютерных игр и цифрового дизайна</p>
+        </div>
+        <div>
+            <h4>О нас</h4>
+            <ul>
+                <li>Новости</li>
+                <li>Портфолио</li>
+                <li>Карьеры</li>
+                <li>Связь с нами</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Связь с нами</h4>
+            <p>Наш центр связи всегда готов оказать вам необходимую помощь</p>
+            <p>+7 (985) 814-98-32</p>
+        </div>
+    </div>
+    <hr>
+    <p>Copyright ® 2025 GameX все права защищены</p> 
+ </footer>
+  <script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value;
+        if(!email.includes('@')) alert('Нет символа @');
+        else if(!email.includes('.')) alert('Нет символа .');
+        else alert('Почта верна!');
+    }
+  </script>
+</body>
+
+</html>
